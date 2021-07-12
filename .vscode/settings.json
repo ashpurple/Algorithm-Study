@@ -6,6 +6,7 @@
         "xutility": "cpp",
         "xlocale": "cpp",
         "vector": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "map": "cpp"
     }
 }
