@@ -8,6 +8,7 @@
         "vector": "cpp",
         "deque": "cpp",
         "map": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "utility": "cpp"
     }
 }
