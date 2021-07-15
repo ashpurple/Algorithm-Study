@@ -9,6 +9,8 @@
         "deque": "cpp",
         "map": "cpp",
         "xstring": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "iosfwd": "cpp",
+        "xiosbase": "cpp"
     }
 }
