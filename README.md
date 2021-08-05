@@ -12,7 +12,7 @@ Solved.ac의 Class별 Essential 문제 정복을 목표로 합니다.
 - 난이도와 Class 별 정렬은 [solved.ac](https://solved.ac/)의 기준을 적용하였습니다
 
 ## Progress
-- [Class 1](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%201)
-- [Class 2](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%202)
-- [Class 3](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%203) 
-- [Class 4](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%204) (current)
+- [x] [Class 1](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%201)
+- [x] [Class 2](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%202)
+- [x] [Class 3](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%203) 
+- [ ] [Class 4](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%204) (current)
