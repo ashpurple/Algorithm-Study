@@ -1,19 +1,21 @@
-# LIS (최장 증가 부분수열)
+# Backtracking
 
-최장 증가 부분 수열이란 인덱스 순으로 부분 수열을 구성해 나갈 때 가장 긴 길이를 가진 증가하는 수열을 뜻한다. <br>
-LIS의 길이를 완전 탐색으로 찾는다면 `O(2^N)`의 시간이 걸리므로 완전 탐색은 불가능하다.
+백트래킹은 DFS에 <b>가지치기 (Pruning)</b> 를 통해 유망하지 않은 노드는 고려하지 않고 탐색하는 완전탐색 기법이다.<br>
+DFS에서 답이 될 가능성이 없는 노드로 빠져 무한히 깊은곳을 탐색하게 되면 굉장히 비효율적이다.<br>
+그래서 이러한 비효율적인 경로를 차단하고 목표지점에 도달 가능한 루트를 검사하는 방법이 백트래킹 알고리즘이다.
 
-## DP를 이용한 방법
-lis는 길이가 더 작은 증가 부분 수열의 집합으로 이루어져있다.<br>
-따라서 dp[i] 를 i번쨰 수를 마지막 원소로 가지는 lis의 길이로 정의하면 완전 탐색에서 중복 연산을 피할 수 있다.<br>
+![image](https://user-images.githubusercontent.com/75887645/129026191-41e1d250-f67f-460f-81d5-9849350e0530.png)
 
-![longest_increasing_subsequence_tabulation](https://user-images.githubusercontent.com/75887645/127164655-eed5ac52-34b8-451c-8711-ece1603f0ed8.gif)
-
+### 용어
+- CSP(Constrain Satisfaction Problmes): 조건을 만족하는 문제
+- Promising: 유망한 노드, CSP에 해당하는 노드
+- Pruning(가지치기): CSP에 해당되지 않은 노드
+- Backtracking: 다시 상위 노드로 회귀, pruning일 때 수행
 
 ### 알고리즘
-arr[i] 는 끝값 arr[j]는 비교 값이다
-- dp[i] = 1 로 초기화 한다.
-- arr[j] < arr[i] 일 경우 증가 수열이다.
-- 동시에 dp[i] < dp[j] + 1 를 만족하면 dp[i] 를 dp[j] + 1로 업데이트 한다 (이전 연산 + 1)
+1. root 노드 부터 dfs 실행
+2. 유망한 노드인지 점검(CSP 만족)
+3. 유망하면 해당 노드의 하위 노드 탐색
+4. 유망하지 않으면 백트래킹 수행(Pruning)
 
-위 알고리즘의 시간복잡도는 `O(N^2)`으로 크기가 적당한 input이 주어질 땐 위와 같은 dp로 해결이 가능하다.
+활용 문제: dfs를 활용한 조건 만족 문제 ex) N-queens, 순열, 조합 
