@@ -13,7 +13,7 @@ void dfs() {
 		for (int i : result) 
 			cout << i << " ";
 		
-		cout << endl;
+		cout << "\n";
         return;
 	}
 	for (int i = 0; i < v.size(); i++) {
