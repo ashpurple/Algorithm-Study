@@ -22,6 +22,7 @@ Solved.ac의 Class별 Essential 문제 정복을 목표로 합니다
 - [x] [Class 3](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%203) 
 - [ ] [Class 4](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%204) (current)
 
+## SMASUNG SDS Winter Algorithm Study
 ## SWEA
 ## Progmrammers
 ## Softeer
