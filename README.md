@@ -1,7 +1,7 @@
 # Intro
 풀이했던 알고리즘 문제 중 학습에 도움이 됐던 핵심 문제들을 기록하였습니다
 
-# Sites
+# Domain
 
 ## BOJ-Algorithm-Study
 Solved.ac의 Class별 Essential 문제 정복을 목표로 합니다
@@ -23,7 +23,10 @@ Solved.ac의 Class별 Essential 문제 정복을 목표로 합니다
 - [ ] [Class 4](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%204) (current)
 
 ## SMASUNG SDS Winter Algorithm Study
+2022 삼성 SDS 동계 알고리즘 특강을 수강하며 학습한 내용을 기록하였습니다
+### Progress
 - day1
+
 ## SWEA
 ## Progmrammers
 ## Softeer
