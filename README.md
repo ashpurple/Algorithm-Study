@@ -21,11 +21,13 @@ Solved.ac의 Class별 Essential 문제 정복을 목표로 합니다
 - [x] [Class 2](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%202)
 - [x] [Class 3](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%203) 
 - [ ] [Class 4](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%204) (current)
+- [ ] [Class 5](https://github.com/ashpurple/BOJ-Algorithm-Study/tree/main/Class%204) (current)
 
 ## SMASUNG SDS Winter Algorithm Study
-2022 삼성 SDS 동계 알고리즘 특강을 수강하며 학습한 내용을 기록하였습니다
-### Progress
-- day1
+2022 삼성 SDS 동계 알고리즘 특강을 수강하며 풀이한 문제와 학습한 내용을 기록하였습니다
+### Problems
+[SDS BOJ](https://github.com/ashpurple/Algorithm-Study/tree/main/Samsung%20SDS)
+### Study
 
 ## SWEA
 ## Progmrammers
