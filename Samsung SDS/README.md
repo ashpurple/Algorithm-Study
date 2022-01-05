@@ -1,4 +1,7 @@
-# 2022 SAMSUNG SDS WINTER ALGORITHM STUDY
+# 2022 SAMSUNG SDS Winter Algorithm Study
+## Index
+1. [알고리즘기초](#Day1,-Day2-알고리즘-기초)
+2. [자료구조](#Day3-자료구조)
 
 ## Day1, Day2 알고리즘 기초
 
@@ -28,5 +31,11 @@
 ### 이분탐색
 - off-by-one error 주의
 - lower bound(이상) / upper bound(초과)
+### 시간복잡도
+- 반복문의 범위나 중첩 되어있는 반복문의 개수를 보고 판단
+- 통상적으로 1억 = 1초
+- 일반적으로 빅-오 표기법을 사용, 최고차항의 차수만 표기
+
 
 ## Day3 자료구조
+
