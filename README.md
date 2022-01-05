@@ -5,7 +5,7 @@
 
 # Domain
 ## BOJ (백준)
-Solved.ac의 Class별 Essential 문제 정복을 목표로 합니다
+Solved.ac의 Class별 문제 정복을 목표로 합니다
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=ashpurple)](https://solved.ac/ashpurple/)
 
