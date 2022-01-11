@@ -1,10 +1,10 @@
 # 2022 SAMSUNG SDS Winter Algorithm Study
 ## Index
-1. [알고리즘기초](#Day1,-Day2-알고리즘-기초)
+1. [알고리즘기초](#Day1-Day2-알고리즘-기초)
 2. [자료구조](#Day3-자료구조)
 3. [정수론](#Day4-정수론)
 4. [조합론](#Day5-조합론)
-5. [그래프](#Day6,-Day7,-Day8-그래프)
+5. [그래프](#Day6-Day7-Day8-그래프)
 
 ## Day1, Day2 알고리즘 기초
 
