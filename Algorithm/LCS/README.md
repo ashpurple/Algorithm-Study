@@ -1,19 +1,34 @@
-# LIS (최장 증가 부분수열)
+# LCS (Longest Common Substring)
 
-최장 증가 부분 수열이란 인덱스 순으로 부분 수열을 구성해 나갈 때 가장 긴 길이를 가진 증가하는 수열을 뜻한다. <br>
-LIS의 길이를 완전 탐색으로 찾는다면 `O(2^N)`의 시간이 걸리므로 완전 탐색은 불가능하다.
+Substring vs Subsequence
 
-## DP를 이용한 방법
-lis는 길이가 더 작은 증가 부분 수열의 집합으로 이루어져있다.<br>
-따라서 dp[i] 를 i번쨰 수를 마지막 원소로 가지는 lis의 길이로 정의하면 완전 탐색에서 중복 연산을 피할 수 있다.<br>
+![image](https://user-images.githubusercontent.com/75887645/149322885-07903847-1659-4a52-9d27-cf7852c93b0c.png)
 
-![longest_increasing_subsequence_tabulation](https://user-images.githubusercontent.com/75887645/127164655-eed5ac52-34b8-451c-8711-ece1603f0ed8.gif)
+## DP를 이용한 구현
+1. margin이 있는 2차원 dp를 생성한다 (0으로 초기화)
+2. 2중 for문을 이용해 한글자씩 비교 후 두 글자가 다르다면 0을 표시
+3. 두문자가 같다면 `dp[i][j] = dp[i-1][j-1] + 1` (왼쪽 대각선위)
+4. 2,3 번 반복 후 dp 배열 중 최대값이 lcs 값이다 
 
+시간복잡도: `O(MN)`
 
-### 알고리즘
-arr[i] 는 끝값 arr[j]는 비교 값이다
-- dp[i] = 1 로 초기화 한다.
-- arr[j] < arr[i] 일 경우 증가 수열이다.
-- 동시에 dp[i] < dp[j] + 1 를 만족하면 dp[i] 를 dp[j] + 1로 업데이트 한다 (이전 연산 + 1)
+![image](https://user-images.githubusercontent.com/75887645/149323688-e1c3bec7-8516-4bc1-bf5f-ba5a1145284b.png)
 
-위 알고리즘의 시간복잡도는 `O(N^2)`으로 크기가 적당한 input이 주어질 땐 위와 같은 dp로 해결이 가능하다.
+# LCS (Longest Common Subsequence)
+
+## DP를 이용한 구현
+1. margin이 있는 2차원 dp를 생성한다 (0으로 초기화)
+2. 2중 for문을 이용해 한글자씩 비교 후 두 글자가 다르면 `dp[i][j] = max(dp[i-1][j], dp[i][j-1]` (왼쪽 위쪽 중의 큰값)
+3. 두문자가 같다면 `dp[i][j] = dp[i-1][j-1] + 1` (왼쪽 대각선위 + 1)
+4. 2,3 번 반복 후 dp 배열 중 마지막 값이 lcs 값이다
+시간복잡도: `O(MN)`
+
+## LCS Substring 값 찾기
+- 같은 길이를 가진 부분문자열이 여러개 나올 수 있다
+- 행렬 끝의 lcs 값부터 탐색을 시작한다
+- 위, 왼쪽 값이 자신과 같으면 위 또는 왼쪽으로 이동한다
+- 위, 왼쪽 값이 자신과 다르면 왼쪽 대각선 위로 이동히며 스택에 문자를 넣는다
+- 0이 나오면 탐색을 멈추고 스택을 반환한다
+- 삽입 역순으로 스택값을 출력한다
+
+![image](https://user-images.githubusercontent.com/75887645/149324469-f93f9194-7b66-4158-b308-3bf7daebc923.png)
