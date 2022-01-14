@@ -1,4 +1,4 @@
-# Segment Tree
+# Index Tree
 
 인덱스 트리의 리프 노드와 리프 노드가 아닌 다른 노드는 다음과 같은 의미를 가진다
 
@@ -15,7 +15,27 @@
 - Bottom up 방식으로 구현
 - 포화 이진 트리이며 leaf 노드는 왼쪽부터 모두 차있는 상태
 
-### 만들기
-만약, N이 2의 제곱꼴인 경우에는 Full Binary Tree 입니다. 또, 그 때 높이는 `lgN`입니다. 리프 노드가 N개인 Full Binary Tree는 필요한 노드의 개수가 `2*N-1개` 입니다.
+### 구현
 
-N이 2의 제곱꼴이 아닌 경우에는 높이가 `H = ceil(lgN)`이고, 총 세그먼트 트리를 만드는데 필요한 배열의 크기는 `2^(H+1) - 1`개가 됩니다.
+- `init()` (초기화)
+  - 입력 데이터의 개수에 따라 시작 인덱스를 계산한다
+  - 시작 인덱스부터 데이터를 삽입한다
+  - 리프 노드로 부터 중간 노드 데이터를 계산하여 입력한다
+
+![image](https://user-images.githubusercontent.com/75887645/149350229-570c5195-d8ac-4bce-8aaa-13c1bf07f012.png)
+- `getSum(a, b)` (구간합)
+  -  a번째 인덱스 부터 b번째 인덱스까지 구간합을 리턴한다
+  -  왼쪽 노드의 인덱스가 홀수 일때나 오른쪽 노드의 인덱스가 짝수일 때 sum에 값을 더해준다
+  -  left가 right 보다 커질 때 까지 계산을 반복한다
+ 
+![image](https://user-images.githubusercontent.com/75887645/149354018-84af974f-1f48-4935-8e7a-934b4cd92100.png)
+
+- `update(i, a)` (갱신)
+  - i번째 데이터를 a로 갱신해준다
+  - i번째 데이터를 a로 바꾼 후 init에서의 과정과 같이 구간합도 갱신해준다
+  
+![image](https://user-images.githubusercontent.com/75887645/149353968-1cfa6488-5121-4023-a218-42a4d02fdbd7.png)
+
+
+
+
