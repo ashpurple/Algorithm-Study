@@ -184,6 +184,8 @@
 
 [K번째 최단경로 찾기](https://www.acmicpc.net/problem/1854)
 
+[파티](https://www.acmicpc.net/problem/1238)
+
 ## DP(동적계획법)
 
 [정수 삼각형](https://www.acmicpc.net/problem/1932)
