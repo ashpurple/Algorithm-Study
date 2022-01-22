@@ -1,4 +1,6 @@
 # Bellman-Ford
+![img](https://user-images.githubusercontent.com/75887645/150623322-447a2cc7-ec0a-47cc-bec5-beda790c93d1.gif)
+
 
 <정의>
 - 방향 그래프에서 <b>한 지점</b>에서 <b>모든 지점</b>까지의 최소거리를 구할 때 사용
