@@ -20,8 +20,8 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 - [x] [Class 1](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%201)
 - [x] [Class 2](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%202)
 - [x] [Class 3](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%203) 
-- [ ] [Class 4](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%204) (current)
-- [ ] [Class 5](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%205)
+- [x] [Class 4](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%204) 
+- [ ] [Class 5](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%205) (current)
 - [ ] [Class 6](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%206)
 
 ## SMASUNG SDS Winter Algorithm Study
