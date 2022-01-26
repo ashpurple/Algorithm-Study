@@ -12,6 +12,7 @@
         "utility": "cpp",
         "iosfwd": "cpp",
         "xiosbase": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "cstdlib": "cpp"
     }
 }
