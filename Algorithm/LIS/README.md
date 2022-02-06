@@ -21,7 +21,7 @@ arr[i] 는 끝값 arr[j]는 비교 값이다
 ## 2.이분탐색을 이용한 방법
 LIS를 저장하는 벡터를 생성해 이분탐색으로 벡터를 갱신시키는 방법이다<br>
 벡터의 크기가 LIS의 길이이며 벡터의 요소는 LIS 중 하나이다<br>
-(단 해당알고리즘에서는 벡터 크기 - 1이 LIS 이다)
+* 단 해당 코드에서는 `vector.size() - 1`이 LIS 이다 (초기값 0을 삽입하기 때문)
 
 ![image](https://user-images.githubusercontent.com/75887645/152678576-e6c02a86-72d6-4eea-89e9-df5f5a1b4e3c.png)
 
