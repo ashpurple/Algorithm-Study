@@ -6,4 +6,4 @@
 
 출력은 모두 함수 내부에서 해주었으며 queue가 비었을때는 0을 출력하고 함수를 종료시켰다
 
-자세한 원리는 [Algorithm - LIS](https://github.com/ashpurple/Algorithm-Study/tree/main/Algorithm/Topology%20Sort) 를 참고하면된다
+자세한 원리는 [Algorithm - Topology Sort](https://github.com/ashpurple/Algorithm-Study/tree/main/Algorithm/Topology%20Sort) 를 참고하면된다
