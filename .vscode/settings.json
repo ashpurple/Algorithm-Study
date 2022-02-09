@@ -13,6 +13,7 @@
         "iosfwd": "cpp",
         "xiosbase": "cpp",
         "queue": "cpp",
-        "cstdlib": "cpp"
+        "cstdlib": "cpp",
+        "istream": "cpp"
     }
 }
