@@ -9,15 +9,13 @@ using namespace std;
 int N, M;
 int dp[MAX + 1][SIZE];
 int depth[SIZE];
-bool isVisited[SIZE] = {false};
+bool isVisited[SIZE];
 vector<int> node[SIZE];
 
 void dfs(int n, int d) {
     isVisited[n] = true;
     depth[n] = d; // update depth
-    int child;
-    for (int i = 0; i < node[n].size(); i++) {
-        child = node[n].at(i);
+    for (int child: node[n]) {
         if (!isVisited[child]){
             dp[0][child] = n; // update ancestor to dp
             dfs(child, d + 1);
@@ -32,17 +30,17 @@ void setDP() {
     }
 }
 int lca(int x, int y) {
-    if (depth[x] > depth[y]) // go up
+    if (depth[x] > depth[y]) // y must be deeper
         swap(x, y);
     for (int i = MAX; i >= 0; i--) {
-        // 2^i jump (save time)
         if (depth[y] - depth[x] >= (1 << i))
-            y = dp[i][y];
+            y = dp[i][y]; // make same depth
     }
     if (x == y) return x; // lca
 
     for (int i = MAX; i >= 0; i--) {
         if (dp[i][x] != dp[i][y]) {
+            // 2^i jump (save time)
             x = dp[i][x];
             y = dp[i][y];
         }
