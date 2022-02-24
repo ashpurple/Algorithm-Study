@@ -21,8 +21,8 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 - [x] [Class 2](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%202)
 - [x] [Class 3](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%203) 
 - [x] [Class 4](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%204) 
-- [ ] [Class 5](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%205) (current)
-- [ ] [Class 6](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%206)
+- [x] [Class 5](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%205) 
+- [ ] [Class 6](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%206) (current)
 
 ## SMASUNG SDS Winter Algorithm Study
 2022 삼성 SDS 동계 알고리즘 특강을 수강하며 풀이한 문제와 학습한 내용을 기록하였습니다<br>
