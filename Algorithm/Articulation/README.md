@@ -23,6 +23,13 @@
 (다음 정점이 현재 정점을 지나지않고 이미 탐색된 정점으로 갈 수 없음을 의미)
 7. 만약 루트 노드이면서 child가 2이상이면 단절점이다
 
+<단절선 알고리즘><br>
+기본 원리는 단절점 알고리즘을 따른다
+- dfs 파라미터로 child 대신 이전의 노드(부모) 번호를 전달한다
+=> self edge 판별에 활용
+- 조건 만족시(`if(nextMin > discovered[cur])`) edge벡터에 단절선 저장
+=> 문제에 따라 정렬, 우선순위 큐등 활용가능
+
 
 본 알고리즘의 walkthrough는 해당 블로그를 참조하였다<br>
 [Articulation Point And Bridge](https://bowbowbow.tistory.com/3)
