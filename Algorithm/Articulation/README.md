@@ -1,4 +1,5 @@
 # Articulation Point & Bridge (단절점, 단절선)
+![image](https://user-images.githubusercontent.com/75887645/156915398-61875a9b-a1da-43e8-aeae-477daa182dbb.png)
 
 <정의 및 활용>
 - 단절: 무방향 그래프에서 정점 또는 간선을 제거했을 때 그래프가 두개 이상으로 나누어지는 것
