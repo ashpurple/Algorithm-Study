@@ -29,3 +29,27 @@ int binarySearch(vector<int>& arr, int target, int start, int end) {
 	}
 	return -1;
 }
+
+int lower_bound(int arr[], int target, int size){
+	int mid, start, end;
+	start = 0, end = size-1;
+
+	while (start < end){ 
+		mid = (start + end) / 2; 
+		if (target <= arr[mid]) end = mid;
+		else start = mid + 1; 
+	}
+	return end;
+}
+
+int upper_bound(int arr[], int target, int size){
+	int mid, start, end;
+	start = 0, end = size - 1;
+
+	while (start < end) {
+		mid = (start + end) / 2; 
+		if (target < arr[mid]) end = mid;
+		else start = mid + 1;
+	}
+	return end;
+}
