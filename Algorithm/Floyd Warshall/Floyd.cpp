@@ -1,9 +1,10 @@
 #include<iostream>
-#include<vector>
+#include<algorithm>
 using namespace std;
-#define INFINITE 1000000000
+#define INF 1000000000
 int N; // the number of vertex
-vector<vector<int>> matrix;
+int M; // the number of edge
+int matrix[101][101];
  
 void Floyd(){
 	for (int k = 1; k <= N; k++) {
@@ -40,16 +41,15 @@ void printMatrix(){
     4 2 9
     4 3 8
     */
-
-    int edge_num; // the number of edge
-    cin >> N >> edge_num;
+    
+    cin >> N >> M;
     // initialize to infinite
-    matrix = vector<vector<int>> (N + 1, vector<int>(N + 1, INFINITE)); 
+    fill(matrix[0], matrix[100], INF);
     
     for(int i = 1; i <= N; i++)
-        matrix[i][i] = 0; // initialize
+        matrix[i][i] = 0; // initialize to zero
 
-    for(int i = 0; i < edge_num; i++){
+    for(int i = 0; i < M; i++){
         int v, u, edge;
         cin >> v >> u >> edge;
         matrix[v][u] = edge;
