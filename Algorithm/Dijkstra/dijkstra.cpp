@@ -2,17 +2,8 @@
 #include <vector>
 #include <queue>
 using namespace std;
-
-#define INF 987654321
-#define SIZE 100001 // Vertex + 1
-
-vector<Data> edge[SIZE]; // 2 dimension
-priority_queue<Data> pq;
-int dist[SIZE];
-bool isVisited[SIZE];
-
-int V, E;
-int u, v, w;
+const int INF = 987654321;
+const int SIZE = 100001; // Vertex + 1
 
 struct Data {
     int vertex;
@@ -24,11 +15,16 @@ struct Data {
     }
 };
 
+vector<Data> edge[SIZE]; // 2 dimension
+priority_queue<Data> pq;
+int dist[SIZE];
+bool visited[SIZE];
+int V, E;
+int u, v, w;
+
 void init(){
-   for (int i = 0; i <= V; i++) {
-        edge[i].clear();
+   for (int i = 1; i <= V; i++) {
         dist[i] = INF;
-        isVisited[i] = false;
     }    
 }
 
@@ -40,11 +36,10 @@ void dijkstra(int start){
         Data u = pq.top();
         pq.pop();
 
-        if (isVisited[u.vertex]) continue;
-        isVisited[u.vertex] = true;
+        if (visited[u.vertex]) continue;
+        visited[u.vertex] = true;
 
-        for (int i = 0; i < edge[u.vertex].size(); i++) {
-            Data v = edge[u.vertex].at(i);
+        for(Data v : edge[u.vertex]){
             if(dist[v.vertex] > dist[u.vertex] + v.weight){
                 dist[v.vertex] = dist[u.vertex] + v.weight;
                 pq.push(Data(v.vertex, dist[v.vertex]));
@@ -60,9 +55,6 @@ int main() {
 
     cin >> V >> E;
     
-    int start;
-    cin >> start;
-    
     init();
 
     /* input */
@@ -72,6 +64,8 @@ int main() {
         //v[v].push_back(Data(u, w)); // bidirectional
     }
 
+    int start;
+    cin >> start;
     dijkstra(start);
 
     /* output (1 to V) */ 
