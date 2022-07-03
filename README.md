@@ -32,7 +32,15 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 
 [SDS Problem](https://github.com/ashpurple/Algorithm-Study/tree/main/Samsung%20SDS)
 
-## SWEA
 ## Progmrammers
+프로그래머스의 유형별 문제와 기업 코딩테스트 기출 문제 풀이를 목표로 합니다
+
+### Rule
+- 문제 출처는 [프로그래머스](https://programmers.co.kr/)입니다
+- 각 문제는 난이도 순으로 정렬되어있습니다 (level1 ~ level3)
+- 사용언어는 <b>C++</b> 입니다
+
+## SWEA
+
 ## Softeer
 
