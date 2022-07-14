@@ -36,13 +36,14 @@ int main(){
             char oper;
             int a, b, w;
             cin >> oper >> a >> b;
-            find(a);
-            find(b);
             if(oper == '!'){
                 cin >> w;
                 Union(a, b, w);
             }
             else{
+                // 업데이트
+                find(a);
+                find(b);
                 if(root[a] == root[b])
                     cout << dist[b] - dist[a] << '\n';
                 else
