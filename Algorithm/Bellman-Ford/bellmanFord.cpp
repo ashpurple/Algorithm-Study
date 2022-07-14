@@ -1,43 +1,38 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-#define SIZE 1000 // vertex num
-#define INF 987654321
+const int SIZE = 1000; // vertex num
+const int INF = 987654321;
 
-struct Data {
-    int u;
-    int v;
-    int w;
-    Data(int u, int v, int w) :u(u), v(v), w(w) {};
+struct Edge {
+    int u; int v; int w;
 };
 
-vector<Data> edge; // 2 dimension
+vector<Edge> edge; // 2 dimension
 int N, M; // vetex, edge
 int dist[SIZE];
 
 void init(){
-    for(int i = 1; i <= N; i++)
-        dist[i] = INF;
-    vector<Data>().swap(edge);
+    for(int i = 1; i <= N; i++) dist[i] = INF;
 }
 
 void Bellman_Ford(int start){
     dist[start] = 0;
     for (int i = 0; i < N - 1; i++){
-        for (int j = 0; j < edge.size(); j++){
-            int u = edge[j].u;
-            int v = edge[j].v;
-            int w = edge[j].w;
+        for (Edge edge : edge){
+            int u = edge.u;
+            int v = edge.v;
+            int w = edge.w;
  
             if (dist[u] == INF) continue;
             if (dist[v] > dist[u] + w) dist[v] = dist[u] + w;
         }
     }
  
-    for (int i = 0; i < edge.size(); i++){ // 음의 사이클
-        int u = edge[i].u;
-        int v = edge[i].v;
-        int w = edge[i].w;
+     for (Edge edge : edge){ // 음의 사이클
+        int u = edge.u;
+        int v = edge.v;
+        int w = edge.w;
  
         if (dist[u] == INF) continue;
         if (dist[v] > dist[u] + w){
@@ -45,7 +40,7 @@ void Bellman_Ford(int start){
             return;
         }
     }
-    cout << "No Negative Cycle" << '\n';
+    for(int i = 1; i <= N; i++) cout << dist[i] << '\n';
 }
 
 int main(){
@@ -55,6 +50,6 @@ int main(){
     init();
     for(int i = 0; i < M; i++){
         cin >> u >> v >> w;
-        edge.push_back(Data(u, v, w));
+        edge.push_back({u, v, w});
     }
 }
