@@ -24,21 +24,23 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 - [x] [Class 5](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%205) 
 - [ ] [Class 6](https://github.com/ashpurple/Algorithm-Study/tree/main/Class%206) (current)
 
-## SMASUNG SDS Winter Algorithm Study
-2022 삼성 SDS 동계 알고리즘 특강을 수강하며 풀이한 문제와 학습한 내용을 기록하였습니다<br>
-(2022.01.03 - 2022.01.14)
-
-[SDS Study](https://github.com/ashpurple/Algorithm-Study/blob/main/Samsung%20SDS/README.md)
-
-[SDS Problem](https://github.com/ashpurple/Algorithm-Study/tree/main/Samsung%20SDS)
-
-## Progmrammers
+## Programmers
 프로그래머스의 유형별 문제와 기업 코딩테스트 기출 문제 풀이를 목표로 합니다
 
 ### Rule
 - 문제 출처는 [프로그래머스](https://programmers.co.kr/)입니다
 - 각 문제는 난이도 순으로 정렬되어있습니다 (level1 ~ level3)
 - 사용언어는 <b>C++</b> 입니다
+
+## SMASUNG SDS Algorithm Study
+2022 삼성 SDS 알고리즘 특강을 수강하며 풀이한 문제와 학습한 내용을 기록하였습니다<br>
+
+삼성 SDS SW 역량테스트 B형에 응시하여 Pro 자격을 취득하였습니다
+
+[SDS Study](https://github.com/ashpurple/Algorithm-Study/blob/main/Samsung%20SDS/README.md)
+
+[SDS Problem](https://github.com/ashpurple/Algorithm-Study/tree/main/Samsung%20SDS)
+
 
 ## SWEA
 
