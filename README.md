@@ -12,7 +12,7 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 ### Rule
 - 문제 출처는 [백준](https://www.acmicpc.net/)입니다
 - 문제 풀이 순서는 각 클래스의 난이도 순입니다
-- 문제의 풀이전략을 README.md에 간략하게 기록합니다 (Class1,2 제외)
+- 문제의 풀이전략을 README.md에 간략하게 기록합니다 (Class1, 2 제외)
 - 사용언어는 <b>C++</b> 입니다
 - 난이도와 Class 별 정렬 방식은 [solved.ac](https://solved.ac/)의 기준을 적용하였습니다
 
@@ -37,12 +37,19 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 
 삼성 SDS SW 역량테스트 B형에 응시하여 Pro 자격을 취득하였습니다
 
-[SDS Study](https://github.com/ashpurple/Algorithm-Study/blob/main/Samsung%20SDS/README.md)
+스터디 기록 : [SDS Study](https://github.com/ashpurple/Algorithm-Study/blob/main/Samsung%20SDS/README.md)
 
-[SDS Problem](https://github.com/ashpurple/Algorithm-Study/tree/main/Samsung%20SDS)
-
-
-## SWEA
+문제풀이 : [SDS Problem](https://github.com/ashpurple/Algorithm-Study/tree/main/Samsung%20SDS)
 
 ## Softeer
+현대 자동차 그룹 소프트웨어 플랫폼 Soteer의 연습문제 풀이를 기록하였습니다
+
+출처: [Softeer](https://softeer.ai/practice/index.do) 코드 : [문제풀이](https://github.com/ashpurple/Algorithm-Study/tree/main/Softeer)
+
+## SWEA
+[SWEA](https://github.com/ashpurple/Algorithm-Study/tree/main/SWEA)
+삼성전자 Software Expert Academy의 연습문제 풀이를 기록하였습니다
+
+출처: [SWEA](https://swexpertacademy.com/main/main.do) 코드 : [문제풀이](https://github.com/ashpurple/Algorithm-Study/tree/main/SWEA)
+
 
