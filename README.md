@@ -47,7 +47,6 @@ Solved.ac의 Class별 문제 정복을 목표로 합니다
 출처: [Softeer](https://softeer.ai/practice/index.do) 코드 : [문제풀이](https://github.com/ashpurple/Algorithm-Study/tree/main/Softeer)
 
 ## SWEA
-[SWEA](https://github.com/ashpurple/Algorithm-Study/tree/main/SWEA)
 삼성전자 Software Expert Academy의 연습문제 풀이를 기록하였습니다
 
 출처: [SWEA](https://swexpertacademy.com/main/main.do) 코드 : [문제풀이](https://github.com/ashpurple/Algorithm-Study/tree/main/SWEA)
